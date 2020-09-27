@@ -1,6 +1,3 @@
-
-{{-- @include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"]) --}}
-{{-- @include('sweetalert::alert', ['cdn' => "https://unpkg.com/sweetalert/dist/sweetalert.min.js"]) --}}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,15 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="{{asset('css/bulma.css')}}">
-	{{-- <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}"> --}}
-	<link rel="stylesheet" href="{{asset('css/fficon.css')}}">
-	<script src="{{asset('js/jquery.min.js')}}"></script>
-	{{-- @include('sweetalert::alert') --}}
-	{{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
+	<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 	
-	{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
-		integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
-		crossorigin="anonymous"></script> --}}
+	<script src="{{asset('js/jquery.min.js')}}"></script>
+	
 	<title>@yield('title')</title>
 	<style>
 		html{
@@ -41,9 +33,6 @@
 
 
 		.box {
-			/* border: 3px solid #666;
-			background-color: #ddd;
-			border-radius: .5em; */
 			padding: 10px; 
 			cursor: move;
 			box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.3);
@@ -57,7 +46,6 @@
 </head>
 
 <body class="has-navbar-fixed-top">
-	{{-- @inject('carbon', '\Carbon\Carbon') --}}
 
 	<div class="container has">
 
@@ -67,31 +55,22 @@
 
 
 	<script>
-		// function example1() {
-		// Vibrate for 500ms
-		// navigator.vibrate([500]);
-		// }
-
-
-		// $('.card-header').on('click',function(){
 		$('.card-header').on('click',function(){
             let cardBody = $(this).next();
             cardBody.slideToggle();
-
 		});
 
 		$('.card-header-icon').on('click', function () {
 		    $(this).toggleClass('rotate');
         })
 
-
-
         $('#expand').on('click',function (e) {
             e.preventDefault();
             $('.card-header-icon').addClass('rotate');
 			$('.card-content').slideUp();
 			navigator.vibrate([30]);
-        })
+		})
+		
         $('#collapse').on('click',function (e) {
             e.preventDefault();
             $('.card-header-icon').removeClass('rotate');
@@ -105,15 +84,6 @@
 		// **************************************************
 		
 		
-
-
-
-
-
-
-
-
-
 
 
 
@@ -182,62 +152,6 @@
 			item.addEventListener('dragend', handleDragEnd, false);
 			});
 			});
-
-
-
-
-
-// ****************************************************************
-
-
-// $('#expand').on('click',function(){
-
-// 	swal({
-// 	  title: "Are you sure?",
-// 	  text: "Once deleted, you will not be able to recover this imaginary file!",
-// 	  icon: "warning",
-// 	  buttons: true,
-// 	  dangerMode: true,
-// 	})
-// 	.then((willDelete) => {
-// 	  if (willDelete) {
-// 		swal("Poof! Your imaginary file has been deleted!", {
-// 		  icon: "success",
-// 		});
-// 	  } 
-// 	  else {
-// 	    swal("Your imaginary file is safe!");
-// 	  }
-// 	});
-// })
-
-
-
-
-
-// $(document).on('click', '#delete', function (e) {
-//     e.preventDefault();
-//     var id = $(this).data('id');
-//     swal({
-//             title: "Are you sure!",
-//             type: "error",
-//             confirmButtonClass: "btn-danger",
-//             confirmButtonText: "Yes!",
-//             showCancelButton: true,
-//         },
-//         function() {
-//             $.ajax({
-//                 type: "POST",
-//                 url: "{{url('/destroy')}}",
-//                 data: {id:id},
-//                 success: function (data) {
-//                               //
-//                     }         
-//             });
-//     });
-// });
-
-
 
 
 	</script>
