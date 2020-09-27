@@ -1,0 +1,29 @@
+html{
+	background: hsl(0, 0%, 96%)
+}
+
+span {
+	transition: 0.5s ease;
+}
+
+.card-header-icon {
+	transition: 0.5s ease;
+	outline: none;
+}
+
+.rotate {
+	transform: rotate(-90deg) !important;
+}
+
+
+
+
+.box {
+	padding: 10px; 
+	cursor: move;
+	box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.3);
+}
+
+.box.over {
+	border: 3px dotted #666;
+}

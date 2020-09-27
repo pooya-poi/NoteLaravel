@@ -19,8 +19,6 @@
 
 
 	<div class="level">
-
-
 			<div class="has-text-centered">
 				<button type="submit" class="button is-dark level-item level-left"><i class="fa fa-edit mr-2"></i> Update
 					Note</button>

@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<h1 class="title has-text-centered">Crete Note</h1>
+<h1 class="title has-text-centered">Create Note</h1>
 <form action="/create" method="POST" class="box ml-5 mr-5  pl-4 pr-4 has-background-light">
 	@csrf
 

@@ -23,13 +23,7 @@ class NoteController extends Controller
         return view('notes.create');
     }
 
-    // public function store(Request $request)
-    // {
-    //    request()->validate([
-    //        'title' => 'required'
-    //    ]);
-    //    redirect('/');
-    // }
+  
 
     public function store()
     {
@@ -68,8 +62,5 @@ class NoteController extends Controller
     {
       $note = Note::find($id)->delete();
       return redirect('/');
-
-    // return redirect()->route('/.destroy');
-    // return dd('hello');
     }
 }
