@@ -11,3 +11,4 @@ if you want to use it just create a database with any name you want and config i
 and in the finall use the 'php artisan serve' and use it😅
 
 
+![](note.gif)
