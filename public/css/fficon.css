@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'fontIcon';
+  src:  url('../fonts/fontIcon.eot?lk7ynf');
+  src:  url('../fonts/fontIcon.eot?lk7ynf#iefix') format('embedded-opentype'),
+    url('../fonts/fontIcon.ttf?lk7ynf') format('truetype'),
+    url('../fonts/fontIcon.woff?lk7ynf') format('woff'),
+    url('../fonts/fontIcon.svg?lk7ynf#fontIcon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fontIcon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ff-Soroush:before {
+  content: "\e906";
+}
+.ff-iGap:before {
+  content: "\e91b";
+}
+.ff-bale:before {
+  content: "\e921";
+  color: #000;
+}
+.ff-eta2:before {
+  content: "\e905";
+}
+.ff-007:before {
+  content: "\e900";
+}
+.ff-whatsapp:before {
+  content: "\e901";
+}
+.ff-home:before {
+  content: "\e902";
+}
+.ff-Facebook:before {
+  content: "\e903";
+  color: #000;
+}
+.ff-aparat:before {
+  content: "\e904";
+  color: #263238;
+}
